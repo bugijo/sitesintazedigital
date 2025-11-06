@@ -1,0 +1,759 @@
+/* Elementos Avançados de Neuromarketing - Sintaxe Digital */
+
+/* Paletas de Cores Específicas por Especialização */
+:root {
+    /* Marketing Digital - Verde Dominante */
+    --marketing-primary: #00ff88;
+    --marketing-secondary: #00cc6a;
+    --marketing-accent: #ff6b35;
+    --marketing-bg: #0a0f0a;
+    --marketing-border: #1a2f1a;
+    
+    /* Desenvolvimento & IA - Azul/Laranja Neon */
+    --dev-primary: #0066ff;
+    --dev-secondary: #004db3;
+    --dev-accent: #ff6600;
+    --dev-bg: #0a0a1a;
+    --dev-border: #1a1a3a;
+    
+    /* Automações - Roxo/Dourado */
+    --auto-primary: #8a2be2;
+    --auto-secondary: #6a1bb2;
+    --auto-accent: #ffd700;
+    --auto-bg: #1a0a1a;
+    --auto-border: #3a1a3a;
+}
+
+/* Fundos 3D Abstratos */
+.bg-3d-marketing {
+    background: linear-gradient(135deg, #0a0f0a 0%, #1a2f1a 50%, #0a0f0a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-3d-marketing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(0, 204, 106, 0.08) 0%, transparent 50%),
+        linear-gradient(45deg, transparent 30%, rgba(0, 255, 136, 0.03) 50%, transparent 70%);
+    animation: float3d 20s ease-in-out infinite;
+}
+
+.bg-3d-marketing::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(0, 255, 136, 0.05) 60deg, transparent 120deg),
+        conic-gradient(from 180deg at 50% 50%, transparent 0deg, rgba(0, 204, 106, 0.03) 90deg, transparent 180deg);
+    animation: rotate3d 30s linear infinite;
+}
+
+.bg-3d-dev {
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 50%, #0a0a1a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-3d-dev::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(0, 102, 255, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 102, 0, 0.08) 0%, transparent 50%),
+        linear-gradient(90deg, transparent 20%, rgba(0, 102, 255, 0.04) 50%, transparent 80%);
+    animation: pulse3d 15s ease-in-out infinite;
+}
+
+.bg-3d-dev::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255, 102, 0, 0.02) 2px, rgba(255, 102, 0, 0.02) 4px),
+        repeating-linear-gradient(-45deg, transparent, transparent 3px, rgba(0, 102, 255, 0.02) 3px, rgba(0, 102, 255, 0.02) 6px);
+    animation: slide3d 25s linear infinite;
+}
+
+.bg-3d-auto {
+    background: linear-gradient(135deg, #1a0a1a 0%, #3a1a3a 50%, #1a0a1a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-3d-auto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 40% 60%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 60% 40%, rgba(255, 215, 0, 0.06) 0%, transparent 50%);
+    animation: wave3d 18s ease-in-out infinite;
+}
+
+.bg-3d-neural {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-3d-neural::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 30% 30%, rgba(0, 255, 136, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 70% 70%, rgba(0, 102, 255, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(138, 43, 226, 0.06) 0%, transparent 60%);
+    animation: neural3d 22s ease-in-out infinite;
+}
+
+.bg-3d-neural::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(0deg, transparent 48%, rgba(255, 255, 255, 0.01) 49%, rgba(255, 255, 255, 0.01) 51%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, rgba(255, 255, 255, 0.01) 49%, rgba(255, 255, 255, 0.01) 51%, transparent 52%);
+    animation: grid3d 20s linear infinite;
+}
+
+/* Animações 3D */
+@keyframes float3d {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-20px) scale(1.05); }
+}
+
+@keyframes rotate3d {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse3d {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes slide3d {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+}
+
+@keyframes wave3d {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(1deg); }
+    75% { transform: translateY(10px) rotate(-1deg); }
+}
+
+@keyframes neural3d {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    33% { transform: scale(1.02) rotate(1deg); }
+    66% { transform: scale(0.98) rotate(-1deg); }
+}
+
+@keyframes grid3d {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(20px, 20px); }
+}
+
+/* Classes Específicas por Especialização */
+
+/* Marketing Digital */
+.marketing-theme {
+    --primary-color: var(--marketing-primary);
+    --secondary-color: var(--marketing-secondary);
+    --accent-color: var(--marketing-accent);
+    --bg-color: var(--marketing-bg);
+    --border-color: var(--marketing-border);
+}
+
+.marketing-gradient {
+    background: linear-gradient(135deg, var(--marketing-primary), var(--marketing-secondary));
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+.marketing-text {
+    color: var(--marketing-primary);
+}
+
+.marketing-border {
+    border-color: var(--marketing-border);
+}
+
+.marketing-bg {
+    background-color: var(--marketing-bg);
+}
+
+.marketing-hover:hover {
+    color: var(--marketing-primary);
+    border-color: var(--marketing-primary);
+}
+
+/* Desenvolvimento */
+.dev-theme {
+    --primary-color: var(--dev-primary);
+    --secondary-color: var(--dev-secondary);
+    --accent-color: var(--dev-accent);
+    --bg-color: var(--dev-bg);
+    --border-color: var(--dev-border);
+}
+
+.dev-gradient {
+    background: linear-gradient(135deg, var(--dev-primary), var(--dev-secondary));
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.3);
+}
+
+.dev-text {
+    color: var(--dev-primary);
+}
+
+.dev-border {
+    border-color: var(--dev-border);
+}
+
+.dev-bg {
+    background-color: var(--dev-bg);
+}
+
+.dev-hover:hover {
+    color: var(--dev-primary);
+    border-color: var(--dev-primary);
+}
+
+/* Automações */
+.auto-theme {
+    --primary-color: var(--auto-primary);
+    --secondary-color: var(--auto-secondary);
+    --accent-color: var(--auto-accent);
+    --bg-color: var(--auto-bg);
+    --border-color: var(--auto-border);
+}
+
+.auto-gradient {
+    background: linear-gradient(135deg, var(--auto-primary), var(--auto-secondary));
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.3);
+}
+
+.auto-text {
+    color: var(--auto-primary);
+}
+
+.auto-border {
+    border-color: var(--auto-border);
+}
+
+.auto-bg {
+    background-color: var(--auto-bg);
+}
+
+.auto-hover:hover {
+    color: var(--auto-primary);
+    border-color: var(--auto-primary);
+}
+
+/* Botões Especializados */
+.btn-marketing {
+    background: linear-gradient(135deg, var(--marketing-primary), var(--marketing-secondary));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-marketing:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+}
+
+.btn-dev {
+    background: linear-gradient(135deg, var(--dev-primary), var(--dev-secondary));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-dev:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+}
+
+.btn-auto {
+    background: linear-gradient(135deg, var(--auto-primary), var(--auto-secondary));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-auto:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+}
+
+/* Cards Especializados */
+.card-marketing {
+    background: linear-gradient(135deg, var(--marketing-bg), rgba(0, 0, 0, 0.8));
+    border: 1px solid var(--marketing-border);
+    transition: all 0.3s ease;
+}
+
+.card-marketing:hover {
+    border-color: var(--marketing-primary);
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2);
+}
+
+.card-dev {
+    background: linear-gradient(135deg, var(--dev-bg), rgba(0, 0, 0, 0.8));
+    border: 1px solid var(--dev-border);
+    transition: all 0.3s ease;
+}
+
+.card-dev:hover {
+    border-color: var(--dev-primary);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+.card-auto {
+    background: linear-gradient(135deg, var(--auto-bg), rgba(0, 0, 0, 0.8));
+    border: 1px solid var(--auto-border);
+    transition: all 0.3s ease;
+}
+
+.card-auto:hover {
+    border-color: var(--auto-primary);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+/* Animações e Micro-interações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px #10b981;
+    }
+    50% {
+        box-shadow: 0 0 20px #10b981, 0 0 30px #10b981;
+    }
+}
+
+/* Navegação Ativa */
+.nav-active {
+    color: #10b981 !important;
+    position: relative;
+}
+
+.nav-active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #10b981, #059669);
+    border-radius: 1px;
+}
+
+/* Hover Effects Avançados */
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Elementos de Urgência */
+.urgency-badge {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* Social Proof Elements */
+.social-proof {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-proof::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Botões Premium */
+.btn-premium {
+    background: linear-gradient(135deg, #10b981, #059669);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-premium:hover::before {
+    left: 100%;
+}
+
+.btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+/* Elementos de Escassez */
+.scarcity-timer {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin: 16px 0;
+    animation: glow 2s infinite;
+}
+
+/* Indicadores de Progresso */
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.progress-step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(55, 65, 81, 0.5);
+    border: 2px solid rgba(107, 114, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.progress-step.active {
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-color: #10b981;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+.progress-step.completed {
+    background: #10b981;
+    border-color: #10b981;
+    color: white;
+}
+
+.progress-line {
+    flex: 1;
+    height: 2px;
+    background: rgba(107, 114, 128, 0.3);
+    margin: 0 10px;
+    position: relative;
+}
+
+.progress-line.completed::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #10b981, #059669);
+    animation: fillProgress 1s ease-in-out;
+}
+
+@keyframes fillProgress {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+/* Tooltips Informativos */
+.tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(17, 24, 39, 0.95);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Elementos de Confiança */
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #10b981;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 4px;
+}
+
+.trust-badge svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+/* Animações de Entrada */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeitos de Loading */
+.loading-skeleton {
+    background: linear-gradient(90deg, rgba(55, 65, 81, 0.3) 25%, rgba(75, 85, 99, 0.3) 50%, rgba(55, 65, 81, 0.3) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .progress-indicator {
+        padding: 0 10px;
+    }
+    
+    .progress-step {
+        width: 30px;
+        height: 30px;
+        font-size: 0.875rem;
+    }
+    
+    .btn-premium {
+        padding: 12px 24px;
+        font-size: 0.875rem;
+    }
+    
+    .urgency-badge {
+        font-size: 0.625rem;
+    }
+}
+
+/* ESTILOS INTENSIFICADOS PARA DIFERENCIAÇÃO VISUAL */
+
+/* Títulos Dominantes por Departamento */
+.marketing-title {
+    color: var(--marketing-primary) !important;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+    font-weight: 800 !important;
+    font-size: 1.2em !important;
+}
+
+.dev-title {
+    color: var(--dev-accent) !important;
+    text-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+    font-weight: 800 !important;
+    font-size: 1.2em !important;
+}
+
+.auto-title {
+    color: var(--auto-accent) !important;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    font-weight: 800 !important;
+    font-size: 1.2em !important;
+}
+
+/* Ícones 3D/Neon */
+.icon-3d-marketing {
+    color: var(--marketing-primary);
+    filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.6));
+    transform: perspective(100px) rotateX(15deg);
+    transition: all 0.3s ease;
+    font-size: 2em;
+}
+
+.icon-3d-marketing:hover {
+    transform: perspective(100px) rotateX(0deg) scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.8));
+}
+
+.icon-3d-dev {
+    color: var(--dev-accent);
+    filter: drop-shadow(0 0 10px rgba(255, 102, 0, 0.6));
+    transform: perspective(100px) rotateY(15deg);
+    transition: all 0.3s ease;
+    font-size: 2em;
+}
+
+.icon-3d-dev:hover {
+    transform: perspective(100px) rotateY(0deg) scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(255, 102, 0, 0.8));
+}
+
+.icon-3d-auto {
+    color: var(--auto-accent);
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+    transform: perspective(100px) rotateZ(15deg);
+    transition: all 0.3s ease;
+    font-size: 2em;
+}
+
+.icon-3d-auto:hover {
+    transform: perspective(100px) rotateZ(0deg) scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+}
+
+/* Seções com Espaçamento Premium */
+.section-premium {
+    padding: 80px 0;
+    margin: 40px 0;
+}
+
+.section-premium h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.section-premium p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Cards com Maior Contraste */
+.card-premium {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.card-premium:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+        padding: 3px 8px;
+    }
+}

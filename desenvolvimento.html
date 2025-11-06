@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento & IA - Sintaxe Digital | Soluções Web Inteligentes</title>
+    <meta name="description" content="Desenvolvimento web moderno com Inteligência Artificial. Aplicações escaláveis, automação inteligente e soluções tecnológicas que impulsionam seu negócio.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="desenvolvimento web, inteligência artificial, automação, aplicações web, IA, machine learning, sintaxe digital, desenvolvimento moderno">
+    <meta name="author" content="Sintaxe Digital">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sintaxedigital.com/desenvolvimento.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Desenvolvimento & IA - Sintaxe Digital | Soluções Web Inteligentes">
+    <meta property="og:description" content="Desenvolvimento web moderno com Inteligência Artificial. Aplicações escaláveis, automação inteligente e soluções tecnológicas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sintaxedigital.com/desenvolvimento.html">
+    <meta property="og:image" content="https://sintaxedigital.com/images/desenvolvimento-og.jpg">
+    <meta property="og:site_name" content="Sintaxe Digital">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Desenvolvimento & IA - Sintaxe Digital">
+    <meta name="twitter:description" content="Desenvolvimento web moderno com Inteligência Artificial. Aplicações escaláveis e automação inteligente.">
+    <meta name="twitter:image" content="https://sintaxedigital.com/images/desenvolvimento-twitter.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Desenvolvimento & IA",
+      "provider": {
+        "@type": "Organization",
+        "name": "Sintaxe Digital"
+      },
+      "description": "Desenvolvimento web moderno com Inteligência Artificial",
+      "serviceType": "Desenvolvimento Web",
+      "areaServed": "Brasil"
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/neuromarketing.css">
+    <link rel="stylesheet" href="css/performance.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dev-primary': '#00D4FF',
+                        'dev-secondary': '#0099CC',
+                        'dev-accent': '#33E6FF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full bg-[#05070E]/95 backdrop-blur-xl border-b border-white/5 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="index.html" class="text-xl font-bold text-white tracking-tight">
+        <span class="gradient-text">Sintaxe</span> Digital
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden items-center space-x-8 md:flex">
+        <a href="index.html" class="hover:text-white transition-colors text-gray-300">Início</a>
+        
+        <!-- Especialidades Dropdown -->
+        <div class="group relative">
+          <button class="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
+            <span>Especialidades</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-64 rounded-xl border border-white/10 bg-[#05070E]/95 backdrop-blur-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <div class="p-2">
+              <a href="marketing.html" class="flex items-center rounded-lg p-3 text-sm text-gray-300 hover:bg-[#33FF99]/10 hover:text-[#33FF99] transition-colors">
+                <div class="mr-3 rounded-full bg-[#33FF99]/10 p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#33FF99]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium">Marketing Digital</div>
+                  <div class="text-xs text-gray-500">Estratégias de conversão</div>
+                </div>
+              </a>
+              <a href="desenvolvimento.html" class="flex items-center rounded-lg p-3 text-sm text-gray-300 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] transition-colors">
+                <div class="mr-3 rounded-full bg-[#FF6B00]/10 p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF6B00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium">Desenvolvimento & IA</div>
+                  <div class="text-xs text-gray-500">Soluções customizadas</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="sobre.html" class="hover:text-white transition-colors text-gray-300">Sobre</a>
+        <a href="servicos.html" class="hover:text-white transition-colors text-gray-300">Serviços</a>
+        <a href="contato.html" class="hover:text-white transition-colors text-[#33FF99] font-medium">Contato</a>
+      </div>
+      <a href="#formulario" class="rounded-full bg-gradient-to-r from-[#33FF99] to-[#FF6B00] px-6 py-2.5 text-sm font-semibold text-black transition hover:scale-105 md:inline-flex">
+        Agendar Consulta
+      </a>
+      <button id="mobile-menu-button" class="inline-flex items-center justify-center rounded border border-white/10 p-2 text-gray-200 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden fixed top-16 left-0 right-0 z-40 bg-[#0A0F1A]/95 backdrop-blur-xl border-b border-white/10">
+      <div class="px-6 py-4 space-y-4">
+        <a href="index.html" class="block text-gray-300 hover:text-white transition-colors">Início</a>
+        
+        <!-- Mobile Especialidades -->
+        <div>
+          <div class="text-gray-300 font-medium mb-3">Especialidades</div>
+          <div class="pl-4 space-y-3">
+            <a href="marketing.html" class="flex items-center text-sm text-gray-400 hover:text-[#33FF99] transition-colors">
+              <div class="w-2 h-2 bg-[#33FF99] rounded-full mr-3"></div>
+              Marketing Digital
+            </a>
+            <a href="desenvolvimento.html" class="flex items-center text-sm text-gray-400 hover:text-[#FF6B00] transition-colors">
+              <div class="w-2 h-2 bg-[#FF6B00] rounded-full mr-3"></div>
+              Desenvolvimento & IA
+            </a>
+          </div>
+        </div>
+        
+        <a href="sobre.html" class="block text-gray-300 hover:text-white transition-colors">Sobre</a>
+        <a href="servicos.html" class="block text-gray-300 hover:text-white transition-colors">Serviços</a>
+        <a href="contato.html" class="block text-[#33FF99] font-medium">Contato</a>
+        <a href="#formulario" class="block bg-gradient-to-r from-[#33FF99] to-[#FF6B00] text-black px-4 py-2 rounded-full text-center font-semibold">
+          Agendar Consulta
+        </a>
+      </div>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-900/30 via-gray-900 to-black relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%2300D4FF" fill-opacity="0.05"%3E%3Crect x="11" y="11" width="38" height="38"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-5xl mx-auto">
+                <div class="inline-flex items-center bg-blue-500/10 border border-blue-500/20 rounded-full px-6 py-2 mb-8">
+                    <span class="w-2 h-2 bg-blue-400 rounded-full mr-3 animate-pulse"></span>
+                    <span class="text-blue-400 text-sm font-medium">Desenvolvimento & Inteligência Artificial</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Código que<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Transforma Negócios</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
+                    Desenvolvemos <strong class="text-blue-400">soluções tecnológicas</strong> e <strong class="text-cyan-400">sistemas inteligentes</strong><br>
+                    que escalam seu negócio e automatizam processos complexos.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="contato.html" class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        Iniciar Projeto
+                    </a>
+                    <a href="#tecnologias" class="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-400 hover:text-white transition-all duration-300">
+                        Ver Tecnologias →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias que Dominamos -->
+    <section id="tecnologias" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Tecnologias que <span class="text-blue-400">Dominamos</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Stack completa para projetos de qualquer complexidade, desde MVPs até sistemas enterprise.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-blue-400/20 rounded-2xl p-8 hover:border-blue-400/40 transition-all duration-300">
+                    <div class="text-4xl mb-6">🌐</div>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">Desenvolvimento Web</h3>
+                    <p class="text-gray-300 mb-6">Sites e aplicações web modernas, responsivas e otimizadas para performance.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• React, Next.js, Vue.js</li>
+                        <li>• Node.js, Python, PHP</li>
+                        <li>• PostgreSQL, MongoDB</li>
+                        <li>• AWS, Docker, Kubernetes</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-blue-400/20 rounded-2xl p-8 hover:border-blue-400/40 transition-all duration-300">
+                    <div class="text-4xl mb-6">📱</div>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">Apps Mobile</h3>
+                    <p class="text-gray-300 mb-6">Aplicativos nativos e híbridos para iOS e Android com UX excepcional.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• React Native, Flutter</li>
+                        <li>• Swift, Kotlin</li>
+                        <li>• Firebase, Supabase</li>
+                        <li>• Push notifications, Analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-blue-400/20 rounded-2xl p-8 hover:border-blue-400/40 transition-all duration-300">
+                    <div class="text-4xl mb-6">🤖</div>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">Inteligência Artificial</h3>
+                    <p class="text-gray-300 mb-6">Soluções de IA que automatizam processos e geram insights valiosos.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Machine Learning, Deep Learning</li>
+                        <li>• Processamento de linguagem natural</li>
+                        <li>• Computer Vision</li>
+                        <li>• Chatbots inteligentes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automações que Transformam (Conteúdo Migrado) -->
+    <section class="py-20 bg-gradient-to-br from-purple-900/20 via-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Automações que <span class="text-purple-400">Transformam</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Eliminamos tarefas repetitivas e otimizamos processos com automações inteligentes.
+                </p>
+            </div>
+
+            <!-- Resultados que Impressionam -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-400/20 rounded-2xl p-6">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">85%</div>
+                    <div class="text-gray-300 font-semibold">Redução de Tempo</div>
+                    <div class="text-sm text-gray-400 mt-2">Em processos manuais</div>
+                </div>
+                <div class="text-center bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-400/20 rounded-2xl p-6">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">24/7</div>
+                    <div class="text-gray-300 font-semibold">Operação Contínua</div>
+                    <div class="text-sm text-gray-400 mt-2">Sem intervenção humana</div>
+                </div>
+                <div class="text-center bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-400/20 rounded-2xl p-6">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">ROI 300%</div>
+                    <div class="text-gray-300 font-semibold">Retorno Médio</div>
+                    <div class="text-sm text-gray-400 mt-2">Em 6 meses</div>
+                </div>
+            </div>
+
+            <!-- Tipos de Automação -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-purple-400/20 rounded-2xl p-8 hover:border-purple-400/40 transition-all duration-300">
+                    <div class="text-4xl mb-6">💬</div>
+                    <h3 class="text-2xl font-bold text-purple-400 mb-4">Chatbots Inteligentes</h3>
+                    <p class="text-gray-300 mb-6">Atendimento automatizado 24/7 com IA conversacional avançada.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Integração com WhatsApp, Telegram</li>
+                        <li>• Processamento de linguagem natural</li>
+                        <li>• Escalação inteligente para humanos</li>
+                        <li>• Analytics de conversas</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-purple-400/20 rounded-2xl p-8 hover:border-purple-400/40 transition-all duration-300">
+                    <div class="text-4xl mb-6">📊</div>
+                    <h3 class="text-2xl font-bold text-purple-400 mb-4">Relatórios Automáticos</h3>
+                    <p class="text-gray-300 mb-6">Dashboards e relatórios gerados automaticamente com insights acionáveis.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Coleta automática de dados</li>
+                        <li>• Visualizações interativas</li>
+                        <li>• Alertas em tempo real</li>
+                        <li>• Distribuição automática</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-purple-400/20 rounded-2xl p-8 hover:border-purple-400/40 transition-all duration-300">
+                    <div class="text-4xl mb-6">⚙️</div>
+                    <h3 class="text-2xl font-bold text-purple-400 mb-4">Workflows Automatizados</h3>
+                    <p class="text-gray-300 mb-6">Processos empresariais otimizados com automação end-to-end.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Integração entre sistemas</li>
+                        <li>• Aprovações automáticas</li>
+                        <li>• Notificações inteligentes</li>
+                        <li>• Auditoria completa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Nosso <span class="text-dev-primary">Processo</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Metodologia ágil que garante entregas no prazo e dentro do orçamento.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-dev-primary to-dev-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dev-primary mb-2">Descoberta</h3>
+                    <p class="text-gray-400">Entendemos profundamente seu negócio e objetivos.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-dev-primary to-dev-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dev-primary mb-2">Planejamento</h3>
+                    <p class="text-gray-400">Criamos a arquitetura e definimos tecnologias ideais.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-dev-primary to-dev-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dev-primary mb-2">Desenvolvimento</h3>
+                    <p class="text-gray-400">Codificamos com qualidade e acompanhamento constante.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-dev-primary to-dev-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dev-primary mb-2">Entrega</h3>
+                    <p class="text-gray-400">Deploy seguro com suporte e manutenção contínua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora ROI -->
+    <section class="py-20 bg-gradient-to-r from-[#0A0F1A] via-[#1A1F2E] to-[#0A0F1A]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Calcule o <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">ROI do Seu Projeto</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Descubra quanto seu negócio pode economizar e lucrar com nossas soluções digitais.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800/90 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+                    <div id="roi-calculator">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div>
+                                <label for="faturamento-atual" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Faturamento Mensal Atual (R$)
+                                </label>
+                                <input type="number" id="faturamento-atual" 
+                                       class="w-full bg-gray-900 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-colors"
+                                       placeholder="Ex: 50000">
+                            </div>
+                            <div>
+                                <label for="custo-atual" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Custos Mensais Atuais (R$)
+                                </label>
+                                <input type="number" id="custo-atual" 
+                                       class="w-full bg-gray-900 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-colors"
+                                       placeholder="Ex: 30000">
+                            </div>
+                            <div>
+                                <label for="investimento-projeto" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Investimento no Projeto (R$)
+                                </label>
+                                <input type="number" id="investimento-projeto" 
+                                       class="w-full bg-gray-900 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-colors"
+                                       placeholder="Ex: 15000">
+                            </div>
+                        </div>
+
+                        <div class="text-center mb-6">
+                            <button id="calculate-roi" 
+                                    class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                </svg>
+                                Calcular ROI
+                            </button>
+                        </div>
+
+                        <div id="roi-result" class="mt-6">
+                            <!-- Resultado será inserido aqui pelo JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-400/20 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-400 mb-3">💡 Como calculamos:</h4>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• <strong>Aumento de conversão:</strong> 25% em média com nossas soluções</li>
+                            <li>• <strong>Redução de custos:</strong> 15% através de automações</li>
+                            <li>• <strong>Otimização de processos:</strong> Economia de tempo e recursos</li>
+                            <li>• <strong>Escalabilidade:</strong> Crescimento sustentável a longo prazo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 bg-gradient-to-r from-dev-primary to-dev-secondary">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Pronto para Inovar?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Vamos transformar sua ideia em uma solução tecnológica robusta e escalável.
+            </p>
+            <a href="contato.html" class="bg-white text-dev-primary px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block">
+                Iniciar Meu Projeto
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo e Descrição -->
+                <div class="md:col-span-1">
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-white">Sintaxe</span>
+                        <span class="text-green-400">Digital</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Transformamos ideias em soluções digitais que geram resultados reais para seu negócio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navegação -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Navegação</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-green-400 transition-colors">Início</a></li>
+                        <li><a href="sobre.html" class="text-gray-400 hover:text-green-400 transition-colors">Sobre</a></li>
+                        <li><a href="contato.html" class="text-gray-400 hover:text-green-400 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Especialidades -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Especialidades</h3>
+                    <ul class="space-y-2">
+                        <li><a href="marketing.html" class="text-gray-400 hover:text-green-400 transition-colors">Marketing Digital</a></li>
+                        <li><a href="desenvolvimento.html" class="text-gray-400 hover:text-green-400 transition-colors">Desenvolvimento & IA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>contato@sintaxedigital.com</li>
+                        <li>+55 (11) 99999-9999</li>
+                        <li>São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="currentYear">2024</span> Sintaxe Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/neuromarketing.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/analytics.js"></script>
+    <script>
+        // Atualizar ano automaticamente
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
